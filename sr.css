@@ -584,22 +584,24 @@ nav ul li a {
 
     .sign-up .btn-sign { 
       background-color: #fb4d46; 
-      color: #fff; 
+      color: #ffffff; 
       /* border: 1px solid #fff;  */
       width: 30px; 
       list-style: none;
       /* justify-self: center; */
       margin: 0 auto;
+      padding: 7px;
       
     }
 
     .sign-in .btn-sign { 
       background-color: transparent; 
-      color: #fff; 
+      color: #ffffff; 
       border: 1px solid #fff; 
       width: 30px;
       /* justify-self: center; */
       margin: 0 auto;
+      padding: 7px;
     }
 
     .btn-sign:hover { opacity: 0.8; }
@@ -1091,7 +1093,7 @@ nav ul li a {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('Images/african-american-man-relaxing-couch-using-smartphone-with-copy-space-screen-home.jpg') center/cover no-repeat;
+    background: url('Images/cards.png') center/cover no-repeat;
     z-index: -2; 
 }
 
@@ -1233,14 +1235,19 @@ nav ul li a {
         color: #fff;
         cursor: pointer;
         transition: 0.3s ease-out;
-        gap: 10px;
+        gap: 30px;
         margin: 10px 0;
         width: 200px;
     }
 
     .how-it-works button:hover{
-        background-color: #df0d06;
+        background-color: #fb4d46;
     }
+    
+    /* .moving-bg {
+      display: none;
+    } */
+     
 }
 
 /* Mobile devices */
@@ -1252,6 +1259,7 @@ nav ul li a {
 
     .how-it-works p {
         font-size: 13px;
+        text-align: left;
     }
 
     .step {
@@ -1267,6 +1275,8 @@ nav ul li a {
         height: 20px;
         object-fit: contain;
         flex-shrink: 0;
+        align-self: center;
+        /* display: none; */
     }
 
     .step span {
@@ -1277,6 +1287,7 @@ nav ul li a {
     .how-it-works button {
         height: 30px;
         width: 100px;
+        gap: 30px;
         border: none;
         border-radius: 20px;
         background-color: #fb4d46;
@@ -1286,17 +1297,19 @@ nav ul li a {
     }
 
     .how-it-works button:hover{
-        background-color: #df0d06;
+        background-color: #fb4d46;
     }
-    .moving-bg {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('Images/african-american-man-relaxing-couch-using-smartphone-with-copy-space-screen-home.jpg') center/cover no-repeat;
-    z-index: -2; 
+        /* .moving-bg {
+      display: none;
+    } */
+     .moving-bg {
+      background: url('Images/cards.png') center/ contain no-repeat;
 }
+    .how-it-works::before {
+        background-color: rgba(0, 0, 0, 0.6); 
+        
+    }
+
 
     
 }
@@ -1407,7 +1420,7 @@ nav ul li a {
 }
 
 .footer-column a:hover {
-    color: #fb4d46; /* hover color */
+    color: #fb4d46; 
 }
 
 /* Bottom section */
@@ -1481,6 +1494,9 @@ nav ul li a {
     .footer-bottom .social-icons img {
         margin: 5px;
     }
+    .footer-column a:hover {
+    color: #ffffff; 
+}
 }
 
 
@@ -3257,7 +3273,7 @@ nav ul li a {
     min-height: 300px;
   }
   .contact-card {
-    padding: 1rem;
+    padding: 30px;
   }
   .contact-form-section {
     padding: 20px;
@@ -3278,6 +3294,21 @@ nav ul li a {
   .WhatsApp img {
     width: 30px;
     margin-left: 10px;
+  }
+  .contact-card a {
+  color: #fb4d46;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+  .contact-card a:hover {
+    color: #d63b34;
+  }
+
+  .contact-card:hover {
+    transform: none;
+    box-shadow:none;
+    border-left: none;
   }
 }
 
@@ -3923,6 +3954,7 @@ nav ul li a {
 
   .intro-text {
     font-size: 1rem;
+    text-align: left;
   }
 
   .info-card {
@@ -3940,6 +3972,15 @@ nav ul li a {
   .Certifications img {
     width: 120px;
   }
+  .policy-links a {
+  color: #2B2B2B;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+  .policy-links a:hover {
+    color: #2B2B2B;
+  }
 }
 
 /* Tablets */
@@ -3950,12 +3991,12 @@ nav ul li a {
   }
 
   .intro-text {
-    text-align: center;
+    text-align: left;
     font-size: 0.95rem;
   }
 
   .info-card {
-    padding: 30px 20px;
+    padding: 30px;
   }
 
   .info-card h3 {
@@ -3987,7 +4028,7 @@ nav ul li a {
   }
 
   .info-card {
-    padding: 20px;
+    padding: 30px;
   }
 
   .info-card h3 {
