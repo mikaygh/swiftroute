@@ -3768,7 +3768,17 @@ nav ul li a {
     .dev-header h1 {
         font-size: 2rem;
     }
+    .dev-int-2{
+    
+   justify-content: center;
+   margin: 0 auto;
+
+    }
+        
 }
+
+
+
 
 @media (max-width: 480px) {
     .dev-header h1 {
@@ -3781,7 +3791,7 @@ nav ul li a {
     .dev-card-2,
     .dev-card-3 {
         padding: 20px;
-        /* width: 300px; */
+        width: 300px;
       
     }
     .dev-list li {
