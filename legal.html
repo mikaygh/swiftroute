@@ -16,11 +16,11 @@
     <meta name="twitter:title" content="SwiftRoute | The Smarter Way to Move Money" />
     <meta name="twitter:description" content="SwiftRoute | The Smarter Way to Move Money" />
     <meta name="twitter:image" content="" />
-    <!-- <link rel="icon" type="image/png" href="Images/favicon-32x32.png">
     <link rel="icon" type="image/png" href="Images/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="Images/favicon.svg" /> -->
+    <link rel="icon" type="image/svg+xml" href="Images/favicon.svg" />
     <link rel="shortcut icon" href="Images/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="Images/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
     <meta name="apple-mobile-web-app-title" content="WAPS | Broadcast and More" />
     <link rel="manifest" href="/site.webmanifest" />
     <link rel="stylesheet" href="sr.css">
@@ -80,6 +80,33 @@
 
 
 </head>
+
+
+
+
+<!-- Preloader full screen -->
+<script>
+window.addEventListener("load", function() {
+  const preloader = document.getElementById("preloader");
+
+  // Delay hiding 
+  setTimeout(() => {
+    preloader.classList.add("hidden");
+  }, 500); // 
+});
+</script>
+
+
+
+
+<div id="preloader">
+<img src="Images/SwiftRoute-Logo-SVG.svg" alt="Logo" id="preloader-logo">
+</div>
+
+
+
+
+
 
 
 <body>
@@ -200,8 +227,8 @@
 
 <section class="legal-compliance">
   <div class="container">
-    <h2 class="section-title">Legal & Compliance</h2>
-    <p class="intro-text">
+    <h2 class="section-title fade-in-section">Legal & Compliance</h2>
+    <p class="intro-text fade-in-section">
       At Swift Route, the safety and integrity of your data and transactions are our top priority. 
       Our systems follow internationally recognized standards to ensure that every payment, transfer, 
       and wallet interaction is secure and legally protected.
@@ -255,9 +282,9 @@
     <div class="info-card">
       <h3>Regulatory Licenses</h3>
       <ul>
-        <li>Bank of Ghana (BoG)</li>
-        <li>Ghana’s Data Protection Commission</li>
-        <li>National Communications Authority (NCA) – for mobile integrations</li>
+        <li>Bank of Ghana (BoG)</li> <br>
+        <li>Ghana’s Data Protection Commission</li> <br>
+        <li>National Communications Authority (NCA) – for mobile integrations</li> <br>
       </ul>
       <p>
         We comply with Anti-Money Laundering (AML), Counter Terrorism Financing (CTF), 
@@ -298,9 +325,9 @@
     <div class="info-card">
       <h3>Staying Secure as a User</h3>
       <ul>
-        <li>Use strong passwords and enable 2FA where available</li>
-        <li>Never share your login or wallet PIN</li>
-        <li>Log out after using shared devices</li>
+        <li>Use strong passwords and enable 2FA where available</li> <br>
+        <li>Never share your login or wallet PIN</li> <br>
+        <li>Log out after using shared devices</li> <br>
         <li>Report suspicious activity to: <a href="mailto:fraud@swiftroutegh.com">fraud@swiftroutegh.com</a></li>
       </ul>
     </div>
@@ -406,7 +433,7 @@
         <a href="#"><img src="Images/x-twitter-brands-solid-full-white.svg" alt="x icon"></a>
     </div>
     <hr>
-    <p>&copy; 2025 SwiftRoute. All rights reserved.</p>
+    <p>&copy; 2025 Swift Route. All rights reserved.</p>
 </div>
 
 </div>
