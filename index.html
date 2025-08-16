@@ -16,9 +16,9 @@
     <meta name="twitter:title" content="SwiftRoute | The Smarter Way to Move Money" />
     <meta name="twitter:description" content="SwiftRoute | The Smarter Way to Move Money" />
     <meta name="twitter:image" content="" />
-    <!-- <link rel="icon" type="image/png" href="Images/favicon-32x32.png">
+    <link rel="icon" type="image/png" href="Images/favicon-32x32.png">
     <link rel="icon" type="image/png" href="Images/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="Images/favicon.svg" /> -->
+    <link rel="icon" type="image/svg+xml" href="Images/favicon.svg" />
     <link rel="shortcut icon" href="Images/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="Images/apple-touch-icon.png" />
     <meta name="apple-mobile-web-app-title" content="WAPS | Broadcast and More" />
@@ -80,6 +80,43 @@
 
 
 </head>
+
+
+
+
+
+<!-- Preloader full screen -->
+
+<!-- No Delay hiding  -->
+<!-- <script>
+window.addEventListener("load", function() {
+ const preloader = document.getElementById("preloader");
+ preloader.classList.add("hidden");
+});
+</script> -->
+
+
+<script>
+window.addEventListener("load", function() {
+  const preloader = document.getElementById("preloader");
+
+//   Delay hiding 
+  setTimeout(() => {
+    preloader.classList.add("hidden");
+  }, 500); // 
+});
+</script>
+
+
+
+
+
+<div id="preloader">
+<img src="Images/SwiftRoute-Logo-SVG.svg" alt="Logo" id="preloader-logo">
+</div>
+
+
+
 
 
 <body class="index-page">
@@ -456,7 +493,7 @@
         <a href="#"><img src="Images/x-twitter-brands-solid-full-white.svg" alt="x icon"></a>
     </div>
     <hr>
-    <p>&copy; 2025 SwiftRoute. All rights reserved.</p>
+    <p>&copy; 2025 Swift Route. All rights reserved.</p>
 </div>
 
 
