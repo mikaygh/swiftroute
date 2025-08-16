@@ -82,6 +82,32 @@
 </head>
 
 
+
+
+
+<!-- Preloader full screen -->
+<script>
+window.addEventListener("load", function() {
+  const preloader = document.getElementById("preloader");
+
+  // Delay hiding 
+  setTimeout(() => {
+    preloader.classList.add("hidden");
+  }, 500); // 
+});
+</script>
+
+
+
+
+
+<div id="preloader">
+<img src="Images/SwiftRoute-Logo-SVG.svg" alt="Logo" id="preloader-logo">
+</div>
+
+
+
+
 <body>
     
 <header> 
@@ -185,7 +211,7 @@
 
   <div class="page-hero-image">
         <div class="page-hero-overlay">
-            <h1 class="fade-scale">About SwiftRoute</h1>
+            <h1 class="fade-scale">About Swift Route</h1>
             <p class="fade-scale"> <a class="sr-hme-a" href="index.html"><span
                         class="sr-home">Home</span> </a> / <span class="pns">About</span> </p>
         </div>
@@ -246,12 +272,12 @@ We offer a full suite of payment solutions for both businesses and individuals, 
             We believe financial access is a right, not a privilege. That’s why we’re committed to building digital financial services that are:
         </p>
 
-        <ul class="mission-list">
+        <!-- <ul class="mission-list">
             <li><span>Affordable</span> — with low to zero transaction fees</li>
             <li><span>Efficient</span> — with instant settlements and transparent reporting</li>
             <li><span>Inclusive</span> — with tools for both urban and underserved users</li>
             <li><span>Scalable</span> — to support everyone from individuals to enterprises</li>
-        </ul>
+        </ul> -->
     </div>
 
     <div class="vision-container fade-right">
@@ -542,7 +568,7 @@ We offer a full suite of payment solutions for both businesses and individuals, 
         <a href="#"><img src="Images/x-twitter-brands-solid-full-white.svg" alt="x icon"></a>
     </div>
     <hr>
-    <p>&copy; 2025 SwiftRoute. All rights reserved.</p>
+    <p>&copy; 2025 Swift Route. All rights reserved.</p>
 </div>
 
 </div>
