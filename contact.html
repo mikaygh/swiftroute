@@ -79,7 +79,24 @@
 
 
 
-</head>
+  <!-- Preloader full screen -->
+  <script>
+  window.addEventListener("load", function() {
+    const preloader = document.getElementById("preloader");
+
+    // Delay hiding 
+    setTimeout(() => {
+      preloader.classList.add("hidden");
+    }, 500); // 
+  });
+</script>
+
+
+
+
+<div id="preloader">
+<img src="Images/SwiftRoute-Logo-SVG.svg" alt="Logo" id="preloader-logo">
+</div>
 
 
 <body>
@@ -198,19 +215,22 @@
 
 
 
-<section class="contact-sections">
-  <div class="contact-card">
-    <h3>General Inquiries</h3>
-    <p>For all general questions, press, or business collaborations:</p>
+<!-- <section class="contact-sections">
+
+<div>
+
+  <div class="contact-card fade-left">
+    <h3>General Inquiries</h3> <br>
+    <p>For all general questions, press, or business collaborations:</p> 
     <ul>
-      <li>Email: <a href="mailto:info@swiftroutegh.com">info@swiftroutegh.com</a></li>
-      <li>Phone: +233 (0)30 000 0000</li>
+      <li>Email: <a href="mailto:info@swiftroutegh.com">info@swiftroutegh.com</a></li> 
+      <li>Phone: +233 (0)30 000 0000</li> 
       <li>Business Hours: Mon – Fri, 9:00 AM – 5:00 PM (GMT)</li>
     </ul>
   </div>
 
-  <div class="contact-card">
-    <h3>Customer Support</h3>
+  <div class="contact-card fade-left">
+    <h3>Customer Support</h3> <br>
     <p>Need help with your wallet, transaction, or account?</p>
     <ul>
       <li>Support Email: <a href="mailto:support@swiftroutegh.com">support@swiftroutegh.com</a></li>
@@ -219,8 +239,15 @@
     </ul>
   </div>
 
-  <div class="contact-card">
-    <h3>Developer & Integration Support</h3>
+</div>
+
+
+
+
+<div>
+
+  <div class="contact-card fade-right">
+    <h3>Developer & Integration Support</h3> <br>
     <p>Have API questions or integration issues?</p>
     <ul>
       <li>Email: <a href="mailto:devsupport@swiftroutegh.com">devsupport@swiftroutegh.com</a></li>
@@ -229,8 +256,8 @@
     </ul>
   </div>
 
-  <div class="contact-card">
-    <h3>Our Office Location</h3>
+  <div class="contact-card fade-right">
+    <h3>Our Office Location</h3> <br>
     <p>Swift Route HQ – Accra, Ghana</p>
     <ul>
       <li>Number 12 Roman Ridge Street, Swift Route Limited</li>
@@ -238,13 +265,119 @@
       <li>(Prior appointment required for in-person visits)</li>
     </ul>
   </div>
+
+</div>
+
+</section> -->
+
+
+
+<!-- 
+
+<section class="contact-sections">
+  <h2>Get in Touch</h2>
+
+  <div>
+    <div class="contact-card fade-left">
+      <h3>General Inquiries</h3>
+      <p>For all general questions, press, or business collaborations:</p> 
+      <ul>
+        <li>Email: <a href="mailto:info@swiftroutegh.com">info@swiftroutegh.com</a></li> 
+        <li>Phone: +233 (0)30 000 0000</li> 
+        <li>Business Hours: Mon – Fri, 9:00 AM – 5:00 PM (GMT)</li>
+      </ul>
+    </div>
+
+    <div class="contact-card fade-left">
+      <h3>Customer Support</h3>
+      <p>Need help with your wallet, transaction, or account?</p>
+      <ul>
+        <li>Support Email: <a href="mailto:support@swiftroutegh.com">support@swiftroutegh.com</a></li>
+        <li>Live Chat: Available via our website</li>
+        <li>WhatsApp: +233 (0)55 000 0000</li>
+      </ul>
+    </div>
+  </div>
+
+  <div>
+    <div class="contact-card fade-right">
+      <h3>Developer & Integration</h3>
+      <p>Have API questions or integration issues?</p>
+      <ul>
+        <li>Email: <a href="mailto:devsupport@swiftroutegh.com">devsupport@swiftroutegh.com</a></li>
+        <li>API Docs: <a href="https://developer.swiftroutegh.com" target="_blank">developer.swiftroutegh.com</a></li>
+        <li>Sandbox: Available upon registration</li>
+      </ul>
+    </div>
+
+    <div class="contact-card fade-right">
+      <h3>Office Location</h3>
+      <p>Swift Route HQ – Accra, Ghana</p>
+      <ul>
+        <li>Number 12 Roman Ridge Street, Swift Route Limited</li>
+        <li>Accra, Ghana</li>
+        <li>(Prior appointment required for in-person visits)</li>
+      </ul>
+    </div>
+  </div>
+</section> -->
+
+
+
+<section class="contact-section">
+  <div class="contact-card">
+    <!-- <h2>Get in Touch</h2> -->
+
+    <div class="contact-details">
+      <div class="contact-item fade-in-section">
+        <h3>General Inquiries</h3>
+        <p>For general questions, press, or business collaborations:</p>
+        <ul>
+          <li>Email: <a href="mailto:info@swiftroutegh.com">info@swiftroutegh.com</a></li>
+          <li>Phone: +233 (0)30 000 0000</li>
+          <li>Business Hours: Mon – Fri, 9 AM – 5 PM (GMT)</li>
+        </ul>
+      </div>
+
+      <div class="contact-item fade-in-section">
+        <h3>Customer Support</h3>
+        <p>Need help with your wallet, transaction, or account?</p>
+        <ul>
+          <li>Email: <a href="mailto:support@swiftroutegh.com">support@swiftroutegh.com</a></li>
+          <li>Live Chat: Available via our website</li>
+          <li>WhatsApp: +233 (0)55 000 0000</li>
+        </ul>
+      </div>
+
+      <div class="contact-item fade-in-section">
+        <h3>Developer & Integration</h3>
+        <p>API questions or integration issues:</p>
+        <ul>
+          <li>Email: <a href="mailto:devsupport@swiftroutegh.com">devsupport@swiftroutegh.com</a></li>
+          <li>Docs: <a href="https://developer.swiftroutegh.com">developer.swiftroutegh.com</a></li>
+          <li>Sandbox: Available upon registration</li>
+        </ul>
+      </div>
+
+      <div class="contact-item fade-in-section">
+        <h3>Office Location</h3>
+        <p>Swift Route HQ – Accra, Ghana</p>
+        <ul>
+          <li>12 Roman Ridge Street, Swift Route Limited</li>
+          <li>Accra, Ghana</li>
+          <li>(By appointment only)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </section>
+
 
 
 
 <!---------- FORM INPUT and MAP -->
 
-<section class="contact-section">
+<section class="form-section">
   <!-- Contact Form -->
   <div class="contact-form-section fade-left">
     <h2>Send Us a Message</h2>
@@ -273,7 +406,7 @@
       </p>
 
       <div class="g-recaptcha"
-           data-sitekey="6LfJQpsrAAAAABj1hzuFwb1Hw0Qa1BdZMK1B1WsW"
+           data-sitekey="6LfkD6grAAAAACkOarQf-OS0oRi0df3P8W57Juew"
            data-callback="enableSubmit"
            data-expired-callback="disableSubmit"></div>
 
@@ -396,7 +529,7 @@
         <a href="#"><img src="Images/x-twitter-brands-solid-full-white.svg" alt="x icon"></a>
     </div>
     <hr>
-    <p>&copy; 2025 SwiftRoute. All rights reserved.</p>
+    <p>&copy; 2025 Swift Route. All rights reserved.</p>
 </div>
 
 </div>
