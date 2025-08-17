@@ -3005,6 +3005,8 @@ nav ul li a {
   max-width: 700px;
   /* border-radius: 20px; */
   border: solid 5px;
+  /* border-top-left-radius: 50px;
+  border-top-right-radius: 50px; */
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
   border-color: #ffffff;
   margin: 0 auto 30px; 
@@ -3046,13 +3048,14 @@ nav ul li a {
 /* ---------Contact section--------- */
 
 .contact-section {
-  padding: 60px 20px;
+  /* padding: 60px 20px; */
   /* background: #fdecec;  */
-  background: #ff635e;; 
-  border-radius: 20px;
+  /* background: #ff635e; */
+  /* border-radius: 20px; */
+ 
   display: flex;
   justify-content: center;
-  padding: 150px;
+  padding: 100px;
   /* padding-top: 150px;
   padding-bottom: 150px; */
   
@@ -3060,10 +3063,12 @@ nav ul li a {
 
 
 .contact-card {
-  background: #fff;
-  padding: 70px;
-  border-radius: 20px;
-  max-width: 1000px;
+  background: #0b1e3f;
+  padding: 100px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  /* border-radius: 20px; */
+  max-width: 1200px;
   width: 100%;
   box-shadow: 0 4px 10px rgba(0,0,0,0.08);
 }
@@ -3083,7 +3088,7 @@ nav ul li a {
 }
 
 .contact-item {
-  border-left: 3px solid #fb4d46; 
+  border-left: 3px solid #fff; 
   padding-left: 15px;
   margin-bottom: 40px;
 }
@@ -3091,7 +3096,7 @@ nav ul li a {
 .contact-item h3 {
   font-size: 1.2rem;
   margin-bottom: 10px;
-  color: #fb4d46;
+  color: #fff;
 }
 
 .contact-item p,
@@ -3099,6 +3104,7 @@ nav ul li a {
   font-size: 0.95rem;
   color: #333;
   margin-bottom: 8px;
+  color: #fff;
 }
 
 .contact-item ul {
@@ -3108,7 +3114,7 @@ nav ul li a {
 }
 
 .contact-item a {
-  color: #fb4d46;
+  color: #fff;
   text-decoration: none;
   font-weight: 500;
 }
