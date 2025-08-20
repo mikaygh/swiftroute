@@ -2596,12 +2596,13 @@ WHITE        #ffffff
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 100px;
-  padding: 20px;
+  gap: 80px; /* smaller gap for better scaling */
+  padding: 40px 20px;
+  flex-wrap: wrap; /* allows stacking on small screens */
 }
 
 .who-we-are h2 {
-  font-size: 40px;
+  font-size: 2.5rem; /* responsive */
   color: #0b1e3f;
   position: relative;
   display: inline-block;
@@ -2620,61 +2621,74 @@ WHITE        #ffffff
 }
 
 .who-we-are p {
-  font-size: 18px;
-  max-width: 520px;
+  font-size: 1.125rem;
+  max-width: 700px;
   color: #2B2B2B;
+  line-height: 1.6;
 }
 
+/* IMAGE */
 .who-we-are img {
-  width: 500px;
-  max-width: 100%;
-  border-radius: 5px;
-  transform: scale(2.0);
+  max-width: 50%;
+  height: auto;
+  border-radius: 10px;
+  transform: none; /* remove fixed scaling */
+  margin: 0 auto;
+  display: block;
+  margin-bottom: -40px;
 }
 
-/* --- Large Tablets --- */
-@media (max-width: 1024px) {
-  .who-we-are {
-    gap: 50px;
-  }
 
-  .who-we-are h2 {
-    font-size: 32px;
-  }
-}
 
-/* --- Tablets & Mobiles --- */
-@media (max-width: 768px) {
+/* ---------- RESPONSIVE BREAKPOINTS ---------- */
+
+/* Tablet (≤ 992px) */
+@media (max-width: 992px) {
   .who-we-are {
+    gap: 40px;
     flex-direction: column;
-    text-align: left;
-    gap: 30px;
-  }
-
-  .who-we-are p {
-    max-width: 100%;
-  }
-}
-
-/* --- Small Mobiles --- */
-@media (max-width: 480px) {
-  .who-we-are {
-    padding: 15px;
+    
   }
 
   .who-we-are h2 {
-    font-size: 26px;
+    font-size: 2rem;
+    text-align: center;
+    margin-left: 40px;
   }
 
   .who-we-are p {
-    font-size: 15px;
+    font-size: 1rem;
+    max-width: 90%;
+    margin: 0 auto;
   }
+
   .who-we-are img {
-  transform: scale(1.5);
-  margin-top: 30px;
-}
+    max-width: 70%;
+  }
 }
 
+/* Mobile (≤ 576px) */
+@media (max-width: 576px) {
+  .who-we-are {
+    padding: 20px 15px;
+  }
+
+  .who-we-are h2 {
+    font-size: 1.6rem;
+    text-align: center !important;
+    padding: 0;
+    margin-left: 20px;
+  }
+
+  .who-we-are p {
+    font-size: 0.95rem;
+  }
+
+  .who-we-are img {
+    max-width: 100%;
+    margin-bottom: -20px;
+  }
+}
 
 
 
