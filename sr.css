@@ -465,7 +465,7 @@ nav ul li a {
 .mobile-nav { display: none; }
 
 @media screen and (max-width: 1024px) {
-    .mobile-nav { display: block; margin-top: 120px; }
+    .mobile-nav { display: block; margin-top: 64px; }
     .nav-bar { display: none; }
 
     .navbar {
@@ -479,14 +479,17 @@ nav ul li a {
         top: 0;
         z-index: 2000;
         box-shadow: 5px 2px 6px rgba(0, 0, 0, 0.15);
+        
     }
 
     
     .logo img {
-        height: 100px;
-        margin-left: 20px;
+        height: 40px;
+        margin-left: 40px;
+        padding-top: 3px;
+        /* margin-bottom: -10px; */
         width: auto;
-        transform: scale(1.7); 
+        transform: scale(3.5); 
         transform-origin: center;
     }
 
