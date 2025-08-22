@@ -2124,7 +2124,7 @@ WHITE        #ffffff
   .payment-gat {
     flex-direction: column; 
     align-items: center;
-    /* padding: 50px; */
+     padding: 20px;
   }
 
   .payment-gat img {
@@ -2154,6 +2154,9 @@ WHITE        #ffffff
     /* text-align: center !important;
     justify-self: center; */
     margin: 0 auto;
+  }
+  .payment-gat {
+    padding: 20px;
   }
 }
 
@@ -2224,6 +2227,7 @@ WHITE        #ffffff
 @media (max-width: 768px) {
     .merchant-sol {
         flex-direction: column;
+        padding: 20px;
     }
 
     /* Reverse order for mobile */
